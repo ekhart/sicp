@@ -19,3 +19,20 @@
 
 (display (+ 2.7 10))
 (newline)
+
+
+(display (+ 21 35 12 7))
+(newline)
+
+(display (* 25 4 12))
+(newline)
+
+
+(display (+ (* 3 5) (- 10 7))
+(newline)
+
+
+(display (+ (* 3 (+ (* 2 4) (+ 3 5))) (+ (- 10 7) 6)))
+(newline)	 
+
+	 
