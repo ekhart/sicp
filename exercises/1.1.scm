@@ -1,3 +1,6 @@
 (load "../utils.scm")
+; (require 'macro)
 
-(print 1)
+(peae (+ 1 1))
+
+; (print 1)
