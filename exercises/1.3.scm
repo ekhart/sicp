@@ -5,6 +5,8 @@
 (peae (square 3))
 
 (define (square-sum a b)
+  ;(print a)
+  ;(print b)
   (+ (square a) (square b)))
 (peae (square-sum 4 3))
 
@@ -22,9 +24,15 @@
 (peae (min l))
 
 (define (square-sum-higher a b c)
-  (let ((m (min '(a b c))))
-    (
-    (cond ((= m a) (square-sum b c))
-	  ((= m b) (square-sum a c))
+  (let* ((l (list a b c))
+	 (m (min l)))
+    ;(print m)
+    ;(print (= m b))
+    (cond ((= m a)
+	   ;(print "a")
+	   (square-sum b c))
+	  ((= m b)
+	   ;(print "b")
+	   (square-sum a c))
 	  (else (square-sum a b)))))
 (peae (square-sum-higher 2 1 3))
